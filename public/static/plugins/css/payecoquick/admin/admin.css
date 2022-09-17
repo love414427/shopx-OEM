@@ -1,0 +1,39 @@
+/**
+ * 基础
+ */
+.payecoquick-content-base .items {
+    border: 1px dashed #e4e4e4;
+    min-height: 85px;
+    max-height: 85px;
+}
+.payecoquick-content-base .items:hover {
+    border: 1px dashed #2196F3;
+    background: #eaf6ff;
+}
+.payecoquick-content-base .items .immages-tag img {
+    max-height: 40px;
+}
+.payecoquick-content-base .items .am-scrollable-vertical {
+    height: 40px;
+}
+
+/**
+ * 编辑
+ */
+.am-panel .am-form-group:last-child,
+.am-tab-panel .am-form-group:last-child {
+    border-bottom: 0;
+}
+
+/**
+ * 管理
+ */
+.payecoquick-content .nav-items {
+    border: 1px solid #eee;
+    background: #f5f5f5; 
+}
+.payecoquick-content .nav-items:hover {
+    border: 1px solid #2196F3;
+    background: #eaf6ff;
+    font-weight: bold;
+}

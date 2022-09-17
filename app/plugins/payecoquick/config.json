@@ -1,0 +1,30 @@
+{
+    "base":{
+        "plugins":"payecoquick",
+        "name":"易联银行卡快捷支付",
+        "logo":"\/static\/upload\/images\/plugins_payecoquick\/2022\/04\/27\/1650990652978166.jpg",
+        "author":"Devil",
+        "author_url":"http:\/\/chunguimaoyi.com\/",
+        "version":"1.0.0",
+        "desc":"配合易联快捷支付插件提供表单收集用户付款信息、短信验证。",
+        "apply_terminal":[
+            "pc",
+            "h5"
+        ],
+        "apply_version":[
+            "2.2.7"
+        ],
+        "is_home":false
+    },
+    "hook":[
+        
+    ],
+    "history":[
+        {
+            "host":"chunguimaoyi.com",
+            "url":"http:\/\/chunguimaoyi.com\/",
+            "ip":"127.0.0.1",
+            "time":"2022-05-01 17:19:34"
+        }
+    ]
+}

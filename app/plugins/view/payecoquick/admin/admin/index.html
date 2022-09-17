@@ -1,0 +1,54 @@
+{{include file="public/header" /}}
+
+<!-- right content start  -->
+<div class="content-right">
+    <div class="content">
+        <legend>
+            <span class="am-text-default">易联快捷支付</span>
+            <a href="{{:MyUrl('admin/pluginsadmin/index')}}" class="am-fr am-text-sm am-margin-top-sm am-icon-mail-reply"> 返回</a>
+        </legend>
+
+        <div class="payecoquick-content am-padding-bottom-xs">
+            <!-- 基础配置 -->
+            <div class="am-panel am-panel-secondary payecoquick-content-base">
+                <div class="am-panel-hd">
+                    <span class="am-panel-title">基础配置</span>
+                    <a class="am-fr" href="{{:PluginsAdminUrl('payecoquick', 'admin', 'saveinfo')}}">编辑</a>
+                </div>
+                <div class="am-panel-bd">
+                    <ul class="am-avg-sm-2 am-avg-md-4 am-avg-lg-4 am-gallery-default">
+                        <li>
+                            <div class="items am-padding-sm">
+                                <label>支付页面右侧图片</label>
+                                {{if !empty($data['right_images'])}}
+                                    <div class="immages-tag">
+                                        <img src="{{$data.right_images}}" />
+                                    </div>
+                                {{else /}}
+                                    <div>未设置</div>
+                                {{/if}}
+                            </div>
+                        </li>
+                        <li>
+                            <div class="items am-padding-sm">
+                                <label>支付页面右侧描述信息</label>
+                                <div class="am-scrollable-vertical">
+                                    {{if !empty($data['right_desc'])}}
+                                        {{:implode('<br />', $data['right_desc'])}}
+                                    {{else /}}
+                                        未设置，默认[ 不展示 ]
+                                    {{/if}}
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- right content end  -->
+        
+<!-- footer start -->
+{{include file="public/footer" /}}
+<!-- footer end -->
