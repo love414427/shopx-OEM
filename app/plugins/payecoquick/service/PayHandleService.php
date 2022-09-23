@@ -37,6 +37,7 @@ class PayHandleService
      */
     public static function Init()
     {
+        file_put_contents('faqi.log', http_build_query($_POST).PHP_EOL, FILE_APPEND);
         $payment = PaymentService::PaymentData(['where'=>['payment'=>'PayecoQuick']]);
         if(empty($payment['config']))
         {
